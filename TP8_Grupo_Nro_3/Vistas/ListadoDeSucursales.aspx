@@ -27,9 +27,6 @@
         .auto-style8 {
             width: 314px;
         }
-        .auto-style9 {
-            width: 200px;
-        }
     </style>
 </head>
 <body>
@@ -73,20 +70,26 @@
                     <asp:TextBox ID="txtIdSucursal" runat="server" Width="293px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
+                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" ValidationGroup="Grupo2" />
                 </td>
                 <td>
                     <asp:Button ID="btnMostrarTodos" runat="server" OnClick="btnMostrarTodos_Click" Text="Mostrar todos" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style8">
+                    <asp:RequiredFieldValidator ID="rfvSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="Red" ValidationGroup="Grupo2">Debe ingresar un ID de sucursal</asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
         </table>
         <div>
-            <br />
-            <div style="margin-left:245px" class="auto-style9">
-                <asp:RequiredFieldValidator ID="rfvSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="Red">Debe ingresar un ID de sucursal</asp:RequiredFieldValidator>
-            </div>
-            <br />
             <br />
             <asp:GridView ID="grdDatos" runat="server">
             </asp:GridView>

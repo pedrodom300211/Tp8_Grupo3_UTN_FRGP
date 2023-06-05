@@ -15,7 +15,7 @@ namespace Negocio
 
         public DataTable getTabla()
         {
-            DAOmixto dao  = new DAOmixto();
+           DAOmixto dao  = new DAOmixto();
             return dao.getTablaMixta();
           
         }
