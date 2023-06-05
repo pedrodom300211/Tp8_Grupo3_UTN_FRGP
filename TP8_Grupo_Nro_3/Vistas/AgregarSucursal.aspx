@@ -13,6 +13,13 @@
         .auto-style2 {
             height: 23px;
         }
+        .auto-style3 {
+            width: 502px;
+        }
+        .auto-style4 {
+            height: 23px;
+            width: 502px;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +30,7 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -32,8 +39,8 @@
                         <asp:HyperLink ID="hlbtnAgregarSucursal" runat="server">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td>&nbsp;</td>
-                    <td>
-                        <asp:HyperLink ID="hlbtnListarSucursal" runat="server">Listado de Sucursales</asp:HyperLink>
+                    <td class="auto-style3">
+                        <asp:HyperLink ID="hlbtnListarSucursal" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
                         <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
@@ -43,42 +50,42 @@
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style4"></td>
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td><strong>GRUPO Nº3</strong></td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td><strong>Agregar Sucursal</strong></td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>Nombre Sucursal:</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtNombreSucursal" runat="server" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ValidationGroup="grupo1" ControlToValidate="txtNombreSucursal" ForeColor="#CC0000">Debe ingresar un nombre de sucursal</asp:RequiredFieldValidator>
                     </td>
@@ -88,7 +95,7 @@
                     <td>&nbsp;</td>
                     <td>Descripción:</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ValidationGroup="grupo1" ControlToValidate="txtDescripcion" ForeColor="#CC0000">Debe ingresar una descripcion</asp:RequiredFieldValidator>
                     </td>
@@ -98,7 +105,7 @@
                     <td>&nbsp;</td>
                     <td>Provincias:</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:DropDownList ID="ddlProvincia" runat="server" Height="17px" ValidationGroup="grupo1" Width="262px">
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
@@ -110,7 +117,7 @@
                     <td>&nbsp;</td>
                     <td>Dirección:</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtDireccion" runat="server" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ValidationGroup="grupo1" ControlToValidate="txtDescripcion" ForeColor="#CC0000">Debe ingresar una dirreción</asp:RequiredFieldValidator>
                     </td>
@@ -120,14 +127,14 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" ValidationGroup="grupo1" Width="89px" />
                     </td>
                     <td>&nbsp;</td>
@@ -136,14 +143,14 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:Label ID="lblAgregarDato" runat="server" Text="" />
                     </td>
                     <td>&nbsp;</td>
@@ -152,7 +159,7 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>

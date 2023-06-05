@@ -19,5 +19,11 @@ namespace Negocio
             return dao.getTablaMixta();
           
         }
+        public DataTable getTablaPorId(NegocioMixta NM)
+        {
+            DAOmixto dao = new DAOmixto();
+            return dao.getTablaPorId(NM);
+
+        }
     }
 }
