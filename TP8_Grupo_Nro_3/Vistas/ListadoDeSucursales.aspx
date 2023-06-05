@@ -69,7 +69,9 @@
                 <td class="auto-style8">
                     <asp:TextBox ID="txtIdSucursal" runat="server" Width="293px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

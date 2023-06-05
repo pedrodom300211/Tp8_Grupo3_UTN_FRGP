@@ -41,11 +41,7 @@ namespace Dao
         public int agregarSucursal(Sucursal sucursal)
         {
 
-<<<<<<< HEAD
-            //sucursal.setId_Sucursal(ds.ObtenerMaximo("SELECT max(Id_Sucursal) FROM Sucursal") + 1);
-=======
             sucursal.setId_Sucursal(ds.ObtenerMaximo("SELECT max(Id_Sucursal) FROM Sucursal") + 1);
->>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
             SqlCommand comando = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref comando, sucursal);
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarSucursal");
@@ -68,31 +64,5 @@ namespace Dao
             SqlParametros = Comando.Parameters.Add("@DIRECCIONSUCURSAL", SqlDbType.VarChar);
             SqlParametros.Value = sucursal.getDireccionSucursal();
         }
-<<<<<<< HEAD
-        /*
-        CREATE PROCEDURE[dbo].[spEliminarSucursal]
-        (
-               @IDSUCURSAL INT
-               )
-               AS
-        DELETE Sucursal WHERE Id_Sucursal = @IDSUCURSAL
-        RETURN
-        */
-
-        /*
-       CREATE PROCEDURE[dbo].[spAgregarSucursal]
-        (
-        @NOMBRESUCURSAL VARCHAR(100),
-        @DESCRIPCIONSUCURSALL VARCHAR(100),
-        @IDPROVINCIASUCURSAL INT,
-        @DIRECCIONSUCURSAL VARCHAR(100)
-        )
-        AS
-        INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal)
-        values (@NOMBRESUCURSAL,@DESCRIPCIONSUCURSALL,@IDPROVINCIASUCURSAL,@DIRECCIONSUCURSAL)
-        RETURN
-        */
-=======
->>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     }
 }

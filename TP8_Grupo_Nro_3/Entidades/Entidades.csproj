@@ -43,10 +43,7 @@
   <ItemGroup>
     <Compile Include="NegocioMixta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Provincia.cs" />
->>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     <Compile Include="Sucursal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,5 +13,10 @@ namespace Vistas
         {
 
         }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

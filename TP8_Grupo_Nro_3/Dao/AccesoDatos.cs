@@ -41,11 +41,7 @@ namespace Dao
                 return null;
             }
         }
-<<<<<<< HEAD
-        public DataTable ObtenerTabla(String NombreTabla, String Sql)
-=======
         public DataTable ObtenerTabla(String NombreTabla, String Sql)  
->>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
         {
             DataSet ds = new DataSet();
             SqlConnection Conexion = ObtenerConexion();
@@ -91,8 +87,6 @@ namespace Dao
             }
             return max;
         }
-<<<<<<< HEAD
-=======
 
         public int ObtenerCantidadDeRegistros (String consulta) /// Cuenta y devuelve la cantidad de registros contenidos dentro de una tabla determinada
         {
@@ -106,6 +100,5 @@ namespace Dao
             }
             return cant;
         }
->>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     }
 }
