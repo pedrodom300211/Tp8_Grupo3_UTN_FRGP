@@ -10,6 +10,12 @@
         .auto-style1 {
             width: 100%;
         }
+<<<<<<< HEAD
+=======
+        .auto-style2 {
+            height: 23px;
+        }
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     </style>
 </head>
 <body>
@@ -37,11 +43,19 @@
                     </td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
+=======
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -77,6 +91,10 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="txtNombreSucursal" runat="server" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
+<<<<<<< HEAD
+=======
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ValidationGroup="grupo1" ControlToValidate="txtNombreSucursal" ForeColor="#CC0000">Debe ingresar un nombre de sucursal</asp:RequiredFieldValidator>
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -86,6 +104,10 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
+<<<<<<< HEAD
+=======
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ValidationGroup="grupo1" ControlToValidate="txtDescripcion" ForeColor="#CC0000">Debe ingresar una descripcion</asp:RequiredFieldValidator>
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -96,6 +118,7 @@
                     <td>
                         <asp:DropDownList ID="ddlProvincia" runat="server" Height="17px" ValidationGroup="grupo1" Width="262px">
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
+<<<<<<< HEAD
                             <asp:ListItem Value="1">Buenos Aires</asp:ListItem>
                             <asp:ListItem Value="2">Entre Rios</asp:ListItem>
                             <asp:ListItem Value="3">Santa Fe</asp:ListItem>
@@ -104,6 +127,10 @@
                             <asp:ListItem Value="6">Misiones</asp:ListItem>
                             <asp:ListItem Value="7">Chaco</asp:ListItem>
                         </asp:DropDownList>
+=======
+                        </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ValidationGroup="grupo1" ControlToValidate="ddlProvincia" InitialValue="--Seleccionar--" ForeColor="#CC0000">Debe seleccionar una provincia</asp:RequiredFieldValidator>
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -113,6 +140,10 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="txtDireccion" runat="server" ValidationGroup="grupo1" Width="254px"></asp:TextBox>
+<<<<<<< HEAD
+=======
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ValidationGroup="grupo1" ControlToValidate="txtDescripcion" ForeColor="#CC0000">Debe ingresar una dirreción</asp:RequiredFieldValidator>
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
                     </td>
                     <td>&nbsp;</td>
                 </tr>

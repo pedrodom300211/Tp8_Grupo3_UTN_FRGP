@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="DAOmixto.cs" />
+    <Compile Include="DAOProvincia.cs" />
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     <Compile Include="DaoSucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

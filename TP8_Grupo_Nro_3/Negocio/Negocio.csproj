@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="NegocioMixto.cs" />
+    <Compile Include="NegocioProvincia.cs" />
+>>>>>>> 870c888694d222a3cfb799afdb0d5f6992f12006
     <Compile Include="NegocioSucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
