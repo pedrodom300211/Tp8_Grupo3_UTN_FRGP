@@ -86,7 +86,6 @@
     <Compile Include="ListadoDeSucursales.aspx.designer.cs">
       <DependentUpon>ListadoDeSucursales.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -106,6 +105,9 @@
       <Project>{94a03876-1c41-44b1-877c-4a924b4e2cb3}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

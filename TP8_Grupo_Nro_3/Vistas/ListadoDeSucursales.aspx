@@ -34,7 +34,7 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style4">
-                    <asp:HyperLink ID="hplBtnAgregarSucursal" runat="server">Agregar Sucursal</asp:HyperLink>
+                    <asp:HyperLink ID="hplBtnAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style7">
                     <asp:HyperLink ID="hlbtnListadoSucursales" runat="server">Listado de sucursales</asp:HyperLink>
@@ -72,11 +72,16 @@
                 <td>
                     <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="btnMostrarTodos" runat="server" OnClick="btnMostrarTodos_Click" Text="Mostrar todos" />
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         <div>
+            <br />
+            <asp:GridView ID="grdDatos" runat="server">
+            </asp:GridView>
         </div>
     </form>
 </body>

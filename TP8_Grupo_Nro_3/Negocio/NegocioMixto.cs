@@ -9,15 +9,15 @@ using System.Data;
 
 namespace Negocio
 {
-    class NegocioMixto
+   public class NegocioMixto
     {
 
 
-        /*public DataTable getTabla()
+        public DataTable getTabla()
         {
-           DAOmixto dao  = new DaoProvincia();
-            return dao.getTablaProvincia();
+           DAOmixto dao  = new DAOmixto();
+            return dao.getTablaMixta();
           
-        }*/
+        }
     }
 }
