@@ -32,7 +32,8 @@ namespace Vistas
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
         {
-            
+            grdDatos.DataSource = NegocioMixto.getTabla();
+            grdDatos.DataBind();
         }
 
         

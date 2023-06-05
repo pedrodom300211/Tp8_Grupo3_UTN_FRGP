@@ -27,6 +27,9 @@
         .auto-style8 {
             width: 314px;
         }
+        .auto-style9 {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +82,11 @@
             </tr>
         </table>
         <div>
+            <br />
+            <div style="margin-left:245px" class="auto-style9">
+                <asp:RequiredFieldValidator ID="rfvSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="Red">Debe ingresar un ID de sucursal</asp:RequiredFieldValidator>
+            </div>
+            <br />
             <br />
             <asp:GridView ID="grdDatos" runat="server">
             </asp:GridView>
