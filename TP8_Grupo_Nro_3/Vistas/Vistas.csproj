@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarSucursal.aspx" />
+    <Content Include="ListadoDeSucursales.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +78,13 @@
     </Compile>
     <Compile Include="AgregarSucursal.aspx.designer.cs">
       <DependentUpon>AgregarSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoDeSucursales.aspx.cs">
+      <DependentUpon>ListadoDeSucursales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoDeSucursales.aspx.designer.cs">
+      <DependentUpon>ListadoDeSucursales.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,6 +96,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{763119c2-0351-4e14-ad12-bcba6a380e48}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{94a03876-1c41-44b1-877c-4a924b4e2cb3}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
