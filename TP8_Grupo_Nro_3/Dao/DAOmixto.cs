@@ -25,10 +25,14 @@ namespace Dao
         }
         public DataTable getTablaMixta()
         {
-
             DataTable tabla = ds.ObtenerTabla("Sucursal", "Select id_Sucursal ,NombreSucursal as Nombre,DescripcionSucursal as Descripcion ,DescripcionProvincia as Provincia ,DireccionSucursal as Direccion from Sucursal inner join  Provincia on Sucursal.Id_ProvinciaSucursal=Provincia.Id_Provincia");
             return tabla;
         }
 
+        public DataTable getTablaPorId(NegocioMixta NM)
+        {
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select id_Sucursal ,NombreSucursal as Nombre,DescripcionSucursal as Descripcion ,DescripcionProvincia as Provincia ,DireccionSucursal as Direccion from Sucursal inner join  Provincia on Sucursal.Id_ProvinciaSucursal=Provincia.Id_Provincia where Id_Sucursal=" + NM.getId_Sucursal());
+            return tabla;
+        }
     }
 }

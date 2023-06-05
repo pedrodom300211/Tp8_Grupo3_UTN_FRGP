@@ -11,14 +11,12 @@ namespace Vistas
 {
     public partial class Ejercicio2 : System.Web.UI.Page
     {
+        private NegocioMixto NegocioMixto = new NegocioMixto();
         protected void Page_Load(object sender, EventArgs e)
         {
            
                 if(! IsPostBack)
-            {
-                NegocioMixto NegocioMixto= new NegocioMixto();
-                /*grdDatos.DataSource = NegocioMixto.getTabla();
-                grdDatos.DataBind();*/
+            {               
                 grdDatos.DataSource = NegocioMixto.getTabla();
                 grdDatos.DataBind();
             }
@@ -26,7 +24,10 @@ namespace Vistas
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-
+            NegocioMixta auxNm = new NegocioMixta();
+            auxNm.setId_Sucursal(Convert.ToInt32(txtIdSucursal.Text));
+            grdDatos.DataSource = NegocioMixto.getTablaPorId(auxNm);
+            grdDatos.DataBind();
         }
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)

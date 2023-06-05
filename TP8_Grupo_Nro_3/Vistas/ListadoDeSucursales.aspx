@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Listado De Sucursales</title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -37,7 +37,7 @@
                     <asp:HyperLink ID="hplBtnAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style7">
-                    <asp:HyperLink ID="hlbtnListadoSucursales" runat="server">Listado de sucursales</asp:HyperLink>
+                    <asp:HyperLink ID="hlbtnListadoSucursales" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
                 <td class="auto-style6">
                     <asp:HyperLink ID="hplbtnEliminarSucursal" runat="server">Eliminar sucursal</asp:HyperLink>
