@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,16 @@ namespace Vistas
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            Boolean confirmacionDeEliminacion = false; 
+            NegocioSucursal negocioSucursal = new NegocioSucursal();
+            confirmacionDeEliminacion = negocioSucursal.eliminarSucursal(int.Parse(txtIdSucursal.Text));
+            if (confirmacionDeEliminacion == true)
+            {
+                lblMensaje.Text = "La sucursal se ha eliminado con exito";
+            }
+            else {
+                lblMensaje.Text = "Error, no se ha podido eliminar la sucursal"; 
+            }
         }
     }
 }

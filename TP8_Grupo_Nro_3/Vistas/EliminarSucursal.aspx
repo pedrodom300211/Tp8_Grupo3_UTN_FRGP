@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="Vistas.EliminarSucursal" %>
+﻿  <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="Vistas.EliminarSucursal" %>
 
 <!DOCTYPE html>
 
@@ -77,7 +77,7 @@
                         </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style10">
-                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
                     <td class="auto-style10"></td>
                 </tr>
@@ -106,7 +106,9 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3" aria-orientation="vertical">
+                        <asp:RequiredFieldValidator ID="rfvSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="#CC0000" Width="176px">Ingresar una ID de sucursal</asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

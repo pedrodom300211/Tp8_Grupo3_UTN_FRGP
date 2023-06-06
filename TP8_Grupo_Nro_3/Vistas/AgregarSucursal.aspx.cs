@@ -29,6 +29,10 @@ namespace Vistas
             if (estado == true)
             {
                 lblAgregarDato.Text = "Sucursal agregada con exito";
+                txtDescripcion.Text = "";
+                txtDireccion.Text = "";
+                txtNombreSucursal.Text = "";
+                ddlProvincia.SelectedIndex = 0;
             }
             else
             {
