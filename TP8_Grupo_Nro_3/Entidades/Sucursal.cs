@@ -20,7 +20,7 @@ namespace Entidades
         ///  Gets
         public int getId_Sucursal()
         {
-            return this.Id_Provincia_Sucursal;
+            return this.Id_Sucursal;
         }
         public String getNombreSucursal()
         {
@@ -39,9 +39,9 @@ namespace Entidades
             return this.DireccionSucursal;
         }
         ///  Sets
-        public void setId_Sucursal(int Id_Provincia_Sucursal)
+        public void setId_Sucursal(int Id_Sucursal)
         {
-            this.Id_Provincia_Sucursal = Id_Provincia_Sucursal;
+            this.Id_Sucursal = Id_Sucursal;
         }
         public void setNombreSucursal(String NombreSucursal)
         {

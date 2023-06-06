@@ -28,12 +28,15 @@ namespace Vistas
             auxNm.setId_Sucursal(Convert.ToInt32(txtIdSucursal.Text));
             grdDatos.DataSource = NegocioMixto.getTablaPorId(auxNm);
             grdDatos.DataBind();
+            txtIdSucursal.Text = "";
         }
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             grdDatos.DataSource = NegocioMixto.getTabla();
             grdDatos.DataBind();
+
+            txtIdSucursal.Text = "";
         }
 
         

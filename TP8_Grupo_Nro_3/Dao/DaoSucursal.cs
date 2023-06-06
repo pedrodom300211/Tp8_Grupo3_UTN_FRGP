@@ -26,6 +26,13 @@ namespace Dao
             String consulta = "Select * from Sucursal where NombreSucursal='" + sucursal.getNombreSucursal() + "'";
             return ds.existe(consulta);
         }
+
+        public Boolean existeSucursalPorId(Sucursal sucursal)
+        {
+            String consulta = "Select * from Sucursal where NombreSucursal='" + sucursal.getId_Sucursal() + "'";
+            return ds.existe(consulta);
+        }
+
         public DataTable getTablaSucursal()
         {
             // List<Categoria> lista = new List<Categoria>();
@@ -40,7 +47,6 @@ namespace Dao
         }
         public int agregarSucursal(Sucursal sucursal)
         {
-
             sucursal.setId_Sucursal(ds.ObtenerMaximo("SELECT max(Id_Sucursal) FROM Sucursal") + 1);
             SqlCommand comando = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref comando, sucursal);
@@ -52,6 +58,7 @@ namespace Dao
             SqlParametros = Comando.Parameters.Add("@IDSUCURSAL", SqlDbType.Int);
             SqlParametros.Value = sucursal.getId_Sucursal();
         }
+
         private void ArmarParametrosSucursalAgregar(ref SqlCommand Comando, Sucursal sucursal)
         {
             SqlParameter SqlParametros = new SqlParameter();

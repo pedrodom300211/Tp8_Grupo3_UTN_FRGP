@@ -40,7 +40,7 @@
                     <asp:HyperLink ID="hlbtnListadoSucursales" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
                 <td class="auto-style6">
-                    <asp:HyperLink ID="hplbtnEliminarSucursal" runat="server">Eliminar sucursal</asp:HyperLink>
+                    <asp:HyperLink ID="hplbtnEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style6"></td>
                 <td class="auto-style6"></td>
