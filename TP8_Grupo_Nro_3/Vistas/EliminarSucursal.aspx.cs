@@ -13,5 +13,10 @@ namespace Vistas
         {
 
         }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

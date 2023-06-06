@@ -36,14 +36,14 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:HyperLink ID="hlbtnAgregarSucursal" runat="server">Agregar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlbtnAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">
                         <asp:HyperLink ID="hlbtnListarSucursal" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
-                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
